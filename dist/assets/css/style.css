@@ -12,18 +12,18 @@
   --pink: #e83e8c;
   --red: #ff4313;
   --orange: #fd7e14;
-  --yellow: #fdfdea;
+  --yellow: white;
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #fdfdea;
+  --primary: white;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
-  --warning: #fdfdea;
+  --warning: white;
   --danger: #ff4313;
   --light: #f8f9fa;
   --dark: #343a40;
@@ -183,7 +183,7 @@ h6,.h6 {
 
 .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(253, 253, 234, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
 
 .btn:disabled {
@@ -192,34 +192,34 @@ h6,.h6 {
 
 .btn-primary {
   color: #212529;
-  background-color: #fdfdea;
-  border-color: #fdfdea;
+  background-color: white;
+  border-color: white;
 }
 
 .btn-primary:hover {
   color: #212529;
-  background-color: #fafac7;
-  border-color: #f9f9bb;
+  background-color: #ececec;
+  border-color: #e6e6e6;
 }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(253, 253, 234, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
 .btn-primary:disabled {
   color: #212529;
-  background-color: #fdfdea;
-  border-color: #fdfdea;
+  background-color: white;
+  border-color: white;
 }
 
 .btn-link {
   font-weight: 400;
-  color: #fdfdea;
+  color: white;
   background-color: transparent;
 }
 
 .btn-link:hover {
-  color: #f6f6a4;
+  color: #d9d9d9;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
