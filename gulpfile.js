@@ -9,13 +9,13 @@ gulp.task('check-server',['sass'],function(){
   browserSync.init({
     server: "src"
   });
-  gulp.watch("src/styles/scss/*.scss",['sass']);
+  gulp.watch("src/assets/scss/*.scss",['sass']);
   gulp.watch("src/*.html").on('change',browserSync.reload);
 });
 
 //Compile scss into css
 gulp.task('sass', function () {
-  return gulp.src('src/styles/scss/style.scss')
+  return gulp.src('src/assets/scss/style.scss')
     .pipe(sass())
     .pipe(gulp.dest('src/dist/assets/css'))
     .pipe(browserSync.stream());
@@ -24,7 +24,7 @@ gulp.task('sass', function () {
  //Get Font Awesome fonts
  gulp.task('fonts', function() {
   return gulp.src('node_modules/font-awesome/fonts/*')
-    .pipe(gulp.dest('src/dist/assets/fonts'))
+    .pipe(gulp.dest('src/assets/fonts'))
 })
 
  //Remove all unused css
