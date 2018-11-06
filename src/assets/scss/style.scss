@@ -1,0 +1,10 @@
+
+//Change bootstrap theme colors
+@import 'variables';
+@import 'mixins';
+@import 'theme';
+
+//Import bootstrap core library
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "custom";

@@ -1,0 +1,7 @@
+h1{
+    font-size: $size;
+}
+
+body{
+   @include setBackground(black); 
+}
