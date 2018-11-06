@@ -6324,6 +6324,9 @@ a.text-dark:hover, a.text-dark:focus {
   #carouselExampleIndicators {
     margin-bottom: 20px; }
   #media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: justify; } }
 
 @media (min-width: 768px) {

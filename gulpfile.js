@@ -7,9 +7,10 @@ var purify = require('gulp-purifycss');
 //Detect when a change in .scss and .css is made and auto sync
 gulp.task('check-server',['sass'],function(){
   browserSync.init({
-    server: "src"
+    server: "dist"
   });
   gulp.watch("src/assets/scss/*.scss",['sass']);
+  gulp.watch("src/*.html",['move-html']);
   gulp.watch("src/*.html").on('change',browserSync.reload);
 });
 
@@ -26,6 +27,11 @@ gulp.task('sass', function () {
   return gulp.src('node_modules/font-awesome/fonts/*')
     .pipe(gulp.dest('src/assets/fonts'))
 })
+
+gulp.task('move-html', function() {
+  gulp.src("src/*.html")
+      .pipe(gulp.dest('dist/'));
+});
 
  //Remove all unused css
 /* gulp.task('css', function() {
