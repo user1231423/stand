@@ -21,6 +21,12 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
  });
 
+ //Get Font Awesome fonts
+ gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('src/dist/assets/fonts'))
+})
+
  //Remove all unused css
 /* gulp.task('css', function() {
   return gulp.src('dist/assets/css/style.css')
