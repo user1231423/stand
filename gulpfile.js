@@ -16,6 +16,7 @@ gulp.task('serve',['sass'],function(){
 gulp.task('sass', function () {
   return gulp.src('src/assets/scss/style.scss')
     .pipe(sass())
+    .pipe(csso())
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(browserSync.stream());
  });
