@@ -5,7 +5,8 @@
         max-height: 25vh;
     }
     #generic{
-        max-height: $extend_mobile;
+        max-height: $extend_mobile_height;
+        max-width: $extend_mobile_width;
     }
 
     #carouselExampleIndicators{
@@ -58,7 +59,7 @@
     background-color: MediumPurple;
     background-clip: content-box;
   }
-  
+
   span {
     padding-top: 70px;
     display: inline-block;
