@@ -5,9 +5,9 @@ var browserSync = require('browser-sync').create();
 var purify = require('gulp-purifycss');
 
 //Detect when a change in .scss and .css is made and auto sync
-gulp.task('check-server',['sass'],function(){
+gulp.task('check-server',['compile-sass'],function(){
   browserSync.init({
-    server: "dist"
+    server: "dist/"
   });
   gulp.watch("src/assets/scss/*.scss",['compile-sass']);
   gulp.watch("src/assets/scss/*.scss").on('change',browserSync.reload);
