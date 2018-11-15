@@ -70,6 +70,25 @@
       background-color: $bg_color;
   }
 
-  .title{
-      font-size: 100px;
+  .title h1{
+      text-align: center;
+      font-size: 3.5rem;
   }
+
+.align-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btn-md{
+    width: 100%;
+}
+
+.search-txt-style{
+    font-size: 2rem;
+}
+
+.car-search-bar{
+    margin-bottom: 30px;
+}
