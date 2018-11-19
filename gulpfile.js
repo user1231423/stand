@@ -25,8 +25,15 @@ gulp.task('compile-sass', function () {
  //Move html files
 gulp.task('move-html', function() {
   gulp.src("src/*.html")
-      .pipe(gulp.dest('dist/'));
+  .pipe(gulp.dest('dist/'));
 });
+
+//Move fonts file
+gulp.task('copy-fonts', function() {
+  gulp.src('node_modules/font-awesome/css/*')
+  .pipe(gulp.dest('dist/assets/fonts'))
+});
+
 
 /* //Remove all unused css
 gulp.task('clean-css', function() {
