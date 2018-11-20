@@ -2,7 +2,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
-var purify = require('gulp-purifycss');
+var mustache = require('gulp-mustache');
+/* var purify = require('gulp-purifycss'); */
 
 //Detect when a change in .scss and .css is made and auto sync
 gulp.task('check-server', function () {
@@ -37,6 +38,18 @@ gulp.task('copy-fonts', function () {
     .pipe(gulp.dest('dist/assets/fonts'))
 });
 
+//Compile mustache to html
+gulp.task('compile-mustache',function(){
+  return gulp.src(['src/views/*.mustache'])
+      .pipe(mustache({},
+          {
+              'extension':'.html'
+          },{})).on('error', function(error) {
+          // We have an error
+          console.log(error);
+      })
+      .pipe(gulp.dest('dist/')); //sent to dist root
+});
 
 /* //Remove all unused css
 gulp.task('clean-css', function() {

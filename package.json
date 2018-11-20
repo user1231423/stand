@@ -24,6 +24,7 @@
     "node-sass": "^4.10.0",
     "gulp-sass": "^4.0.2",
     "browser-sync": "^2.26.3",
-    "gulp-purifycss": "^0.2.0"
+    "gulp-purifycss": "^0.2.0",
+    "gulp-mustache": "^4.1.0"
   }
 }

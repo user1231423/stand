@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stand</title>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link href="assets/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--Head-->
+    {{> components/head }}
 </head>
 
 <body>
@@ -94,87 +89,26 @@
     <!--Container with some images-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
-                <div class="p-2 mb-2 text-center">
-                    <img id="generic" src="http://www.safexone.com/images/old/default.gif" alt="Generic placeholder image">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-2 mb-2 text-center">
-                    <img id="generic" src="http://www.safexone.com/images/old/default.gif" alt="Generic placeholder image">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-2 mb-2 text-center">
-                    <img id="generic" src="http://www.safexone.com/images/old/default.gif" alt="Generic placeholder image">
-                </div>
-            </div>
+            {{> components/generic-imgs }}
+            {{> components/generic-imgs }}
+            {{> components/generic-imgs }}
         </div>
     </div>
 
     <!--Containers with some text-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
-                <h5>Lorem ipsum dolor sit</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci cupiditate officiis a iusto rerum
-                    itaque sapiente. Accusantium animi magni architecto numquam, corrupti voluptates! Harum similique
-                    possimus, id ab consequuntur unde.</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Lorem ipsum dolor sit</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci cupiditate officiis a iusto rerum
-                    itaque sapiente. Accusantium animi magni architecto numquam, corrupti voluptates! Harum similique
-                    possimus, id ab consequuntur unde.</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Lorem ipsum dolor sit</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci cupiditate officiis a iusto rerum
-                    itaque sapiente. Accusantium animi magni architecto numquam, corrupti voluptates! Harum similique
-                    possimus, id ab consequuntur unde.</p>
-            </div>
+            {{> components/containers-txt }}
+            {{> components/containers-txt }}
+            {{> components/containers-txt }}
         </div>
     </div>
 
-
-
     <!--Footer-->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-md-12 py-5">
-                    <div class="text-center">
-                        <!--Facebook-->
-                        <a href="#">
-                            <i class="fa fa-facebook white-text"></i>
-                        </a>
-                        <!--Instagram-->
-                        <a href="#">
-                            <i class="fa fa-instagram white-text"></i>
-                        </a>
-                        <!--Youtube-->
-                        <a href="#">
-                            <i class="fa fa-youtube white-text"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Copyright -->
-            <div class="row">
-                <div class="col-xs-12 col-md-12 text-center">
-                    <div class="py-3">© 2018 Copyright:
-                        <a href="#"> Admedia</a>
-                    </div>
-                </div>
-            </div>
-    </footer>
+    {{> components/footer }}
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <!--Scripts-->
+    {{> components/scripts }}
 </body>
 
 </html>
