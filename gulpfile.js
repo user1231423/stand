@@ -10,9 +10,8 @@ gulp.task('check-server', function () {
   browserSync.init({
     server: "dist"
   });
-  gulp.watch("src/assets/scss/*.scss", ['compile-sass']);
-  gulp.watch("src/*.html", ['move-html']);
-  gulp.watch("src/*.html").on('change', browserSync.reload);
+  gulp.watch(['src/assetx/scss/*.scss'], ['compile-sass']).on('change', browserSync.reload);
+  gulp.watch('src/views/*.mustache',['compile-mustache']).on('change', browserSync.reload);
 });
 
 //Compile scss into css
@@ -23,11 +22,11 @@ gulp.task('compile-sass', function () {
     .pipe(browserSync.stream());
 });
 
-//Move html files
+/* //Move html files
 gulp.task('move-html', function () {
   gulp.src("src/*.html")
   .pipe(gulp.dest('dist/'));
-});
+}); */
 
 //Move fonts file
 gulp.task('copy-fonts', function () {
